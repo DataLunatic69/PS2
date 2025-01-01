@@ -1,11 +1,18 @@
-### Data Flow Structure for the Clinical Trial Enrollment Prediction Model
+### Data Flow Structure for Clinical Trial Enrollment Prediction
 
-- **Conditions** -----> **Time Taken for Enrollment** <----- **Country**  
+- **Conditions**  
+    |  
+    v  
+- **Time Taken for Enrollment** <----- **Country**  
     |                      ↑                        |  
+    v                      |                        v  
 - **Interventions** ---> **Enrollment** ---> **Study Design** ---> **Period**  
     |                      ↑                |  
+    v                      |                v  
 - **Primary Outcome Measures**      |       **Study Phases**  
     |                      |                ↑  
+    v                      |                |  
 - **Secondary Outcome Measures**    |         **Criteria**  
     |                      ↑  
+    v  
 - **Sex** ---------> **Age** --> **City** -----> **Count**
